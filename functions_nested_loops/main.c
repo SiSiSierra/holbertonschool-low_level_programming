@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -20,6 +21,11 @@ int _putchar(char c)
  */
 int main(void)
 {
+	printf("Output of Task 1 -----\n");
 	print_alphabet();
+
+	printf("Output of Task 2 -----\n");
+	print_alphabet_x10();
+
 	return (0);
 }
