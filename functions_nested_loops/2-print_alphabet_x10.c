@@ -17,6 +17,11 @@ void print_alphabet(void)
 	_putchar(10);
 }
 
+/**
+ * print_alphabet_x10 - Print the alpabet in lowers 10 times
+ *
+ * Return: void
+ */
 void print_alphabet_x10(void)
 {
 	int i;
