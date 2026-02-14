@@ -28,10 +28,20 @@ int main(void)
 	print_alphabet_x10();
 
 	printf("Output of Task 3 -----\n");
-	printf("%d", _islower(97));  
-	printf("%d", _islower(96));  
+	printf("%d", _islower(97));
+	printf("%d", _islower(96));
 	printf("%d", _islower(122));
-	printf("%d", _islower(123));	
+	printf("%d\n", _islower(123));
+
+	printf("Output of Task 4 ------\n");
+	printf("%d", _isalpha(97));
+	printf("%d", _isalpha(96));
+	printf("%d", _isalpha(122));
+	printf("%d", _isalpha(123));
+	printf("%d", _isalpha(65));
+	printf("%d", _isalpha(64));
+	printf("%d", _isalpha(90));
+	printf("%d", _isalpha(91));
 
 
 	return (0);
