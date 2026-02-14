@@ -12,3 +12,20 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+/**
+ * print_alphabet - writes the alphabet in lowercase
+ *
+ * Return - void
+ */
+void print_alphabet(void)
+{
+	int i;
+
+	i = 97;
+	do {
+		_putchar (i);
+		i++;
+	} while (i < 123);
+	_putchar(10);
+}
