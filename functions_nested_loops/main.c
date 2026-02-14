@@ -43,6 +43,11 @@ int main(void)
 	printf("%d", _isalpha(90));
 	printf("%d", _isalpha(91));
 
+	printf("Output of Task 5 -----\n");
+	printf(", %d | ", print_sign(5));
+	printf(", %d | ", print_sign(-9));
+	printf(", %d | ", print_sign(0));
+
 
 	return (0);
 }
