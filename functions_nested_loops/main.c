@@ -14,18 +14,12 @@ int _putchar(char c)
 }
 
 /**
- * print_alphabet - writes the alphabet in lowercase
+ * main - entry point
  *
- * Return - void
+ * Return: 0
  */
-void print_alphabet(void)
+int main(void)
 {
-	int i;
-
-	i = 97;
-	do {
-		_putchar (i);
-		i++;
-	} while (i < 123);
-	_putchar(10);
+	print_alphabet();
+	return (0);
 }

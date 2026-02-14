@@ -1,12 +1,19 @@
 #include "main.h"
 
 /**
- * main - Print putchar
+ * print_alphabet - Print the alphabet in lowers
  *
- * Return: 0
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int i;
+
+	i = 97;
+	do {
+		_putchar (i);
+		i++;
+	} while (i < 123);
+	_putchar(10);
 }
+
