@@ -27,5 +27,12 @@ int main(void)
 	printf("Output of Task 2 -----\n");
 	print_alphabet_x10();
 
+	printf("Output of Task 3 -----\n");
+	printf("%d", _islower(97));  
+	printf("%d", _islower(96));  
+	printf("%d", _islower(122));
+	printf("%d", _islower(123));	
+
+
 	return (0);
 }
