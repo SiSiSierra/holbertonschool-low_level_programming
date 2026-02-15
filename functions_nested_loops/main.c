@@ -63,5 +63,9 @@ int main(void)
 	jack_bauer();
 	printf("\n");
 
+	printf("Output of Task 9 -----\n");
+	times_table();
+	printf("\n");
+
 	return (0);
 }
