@@ -10,6 +10,10 @@ int print_last_digit(int n)
 {
 	int m;
 
+	if (n == -2147483648)
+	{
+		n = 8;
+	}
 	if (n < 0)
 	{
 		n *= -1;
