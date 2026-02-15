@@ -21,6 +21,8 @@ int _putchar(char c)
  */
 int main(void)
 {
+	int n;
+
 	printf("Output of Task 1 -----\n");
 	print_alphabet();
 
@@ -54,9 +56,8 @@ int main(void)
 	printf("%d\n", _abs(-1));
 
 	printf("Output of Task 7 -----\n");
-	print_last_digit(99);
-	print_last_digit(-5);
-	printf("\n");
+	n = print_last_digit(98);
+	printf("%d", n + 48);
 
 	return (0);
 }
