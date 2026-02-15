@@ -67,5 +67,9 @@ int main(void)
 	times_table();
 	printf("\n");
 
+	printf("Output of Task 10 -----\n");
+	printf("%d", add(10, 999));
+	printf("\n");
+
 	return (0);
 }
