@@ -57,7 +57,11 @@ int main(void)
 
 	printf("Output of Task 7 -----\n");
 	n = print_last_digit(98);
-	printf("%d", n + 48);
+	printf("%d\n", n + 48);
+
+	printf("Output of Task 8 ------\n");
+	jack_bauer();
+	printf("\n");
 
 	return (0);
 }
