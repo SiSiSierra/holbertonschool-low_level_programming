@@ -71,5 +71,8 @@ int main(void)
 	printf("%d", add(10, 999));
 	printf("\n");
 
+	printf("Output of Task 11 -----\n");
+	print_to_98(-1);
+	print_to_98(100);
 	return (0);
 }
