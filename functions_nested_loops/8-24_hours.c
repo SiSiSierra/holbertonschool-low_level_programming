@@ -40,11 +40,11 @@ void jack_bauer(void)
 		{
 			m2++;
 		}
+		_putchar(10);
 		if (h1 == 2 && h2 == 4)
 		{
 			break;
 		}
-		_putchar(10);
 
 	} while (1);
 }
