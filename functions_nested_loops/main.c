@@ -46,12 +46,17 @@ int main(void)
 	printf("Output of Task 5 -----\n");
 	printf(", %d | ", print_sign(5));
 	printf(", %d | ", print_sign(-9));
-	printf(", %d | ", print_sign(0));
+	printf(", %d | \n", print_sign(0));
 
 	printf("Output of Task 6 -----\n");
 	printf("%d\n", _abs(1));
 	printf("%d\n", _abs(0));
 	printf("%d\n", _abs(-1));
+
+	printf("Output of Task 7 -----\n");
+	print_last_digit(99);
+	print_last_digit(-5);
+	printf("\n");
 
 	return (0);
 }
