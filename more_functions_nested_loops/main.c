@@ -14,5 +14,8 @@ int main(void)
 	printf("%d%d%d%d", _isdigit(47), _isdigit(48), _isdigit(57), _isdigit(58));
 	printf("\n");
 
+	printf("Task 2 -----\n");
+	printf("%d\n", mult(2, 34579834));
+
 	return (0);
 }
