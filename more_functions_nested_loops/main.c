@@ -42,5 +42,10 @@ int main(void)
 	print_square(2);
 	print_square(0);
 
+	printf("Task 10 -----\n");
+	print_triangle(3);
+	print_triangle(5);
+	print_triangle(0);
+
 	return (0);
 }
