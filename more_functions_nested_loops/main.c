@@ -31,5 +31,11 @@ int main(void)
 	print_line(-5);
 	print_line(20);
 
+	printf("Task 7 -----\n");
+	print_diagonal(0);
+	print_diagonal(3);
+	print_diagonal(2);
+	print_diagonal(-5);
+
 	return (0);
 }
