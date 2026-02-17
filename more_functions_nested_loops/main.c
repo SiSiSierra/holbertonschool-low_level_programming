@@ -26,5 +26,10 @@ int main(void)
 	printf("Task 5 -----\n");
 	more_numbers();
 
+	printf("Task 6 -----\n");
+	print_line(0);
+	print_line(-5);
+	print_line(20);
+
 	return (0);
 }
