@@ -19,6 +19,9 @@ int main(void)
 
 	printf("Task 3 -----\n");
 	print_numbers();
+	
+	printf("Task 4 -----\n");
+	print_most_numbers();
 
 	return (0);
 }
