@@ -23,5 +23,8 @@ int main(void)
 	printf("Task 4 -----\n");
 	print_most_numbers();
 
+	printf("Task 5 -----\n");
+	more_numbers();
+
 	return (0);
 }
