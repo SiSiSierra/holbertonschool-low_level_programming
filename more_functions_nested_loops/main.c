@@ -15,7 +15,10 @@ int main(void)
 	printf("\n");
 
 	printf("Task 2 -----\n");
-	printf("%d\n", mult(2, 34579834));
+	printf("%d\n", mul(2, 34579834));
+
+	printf("Task 3 -----\n");
+	print_numbers();
 
 	return (0);
 }
