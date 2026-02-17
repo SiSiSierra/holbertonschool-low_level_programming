@@ -37,5 +37,10 @@ int main(void)
 	print_diagonal(2);
 	print_diagonal(-5);
 
+	printf("Task 8 -----\n");
+	print_square(5);
+	print_square(2);
+	print_square(0);
+
 	return (0);
 }
