@@ -25,6 +25,8 @@ int main(void)
 
 	_puts(str);
 
+	print_rev(str);
+
 	return (0);
 }
 
