@@ -23,6 +23,8 @@ int main(void)
 
 	printf("%d\n", _strlen(str));
 
+	_puts(str);
+
 	return (0);
 }
 
