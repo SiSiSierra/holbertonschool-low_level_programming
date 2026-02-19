@@ -9,9 +9,18 @@
 int main(void)
 {
 	int n = 402;
+	int a = 5;
+	int b = 36;
+
 	printf("%d\n", n);
 	reset_to_98(&n);
 	printf("%d\n", n);
+
+	printf("%d - %d\n", a, b);
+	swap_int(&a, &b);
+	printf("%d - %d\n", a, b);
+
+
 	return (0);
 }
 
