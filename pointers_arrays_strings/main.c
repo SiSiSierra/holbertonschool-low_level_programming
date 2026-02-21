@@ -33,6 +33,8 @@ int main(void)
 
 	puts2(s);
 
+	puts_half(s);
+
 	return (0);
 }
 
