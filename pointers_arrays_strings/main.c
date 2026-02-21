@@ -12,6 +12,7 @@ int main(void)
 	int a = 5;
 	int b = 36;
 	char *str = "Len";
+	char s[10] = "My School";
 
 	printf("%d\n", n);
 	reset_to_98(&n);
@@ -26,6 +27,9 @@ int main(void)
 	_puts(str);
 
 	print_rev(str);
+
+	rev_string(s);
+	printf("%s\n", s);
 
 	return (0);
 }
