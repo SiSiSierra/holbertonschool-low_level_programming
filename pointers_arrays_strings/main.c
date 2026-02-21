@@ -31,6 +31,8 @@ int main(void)
 	rev_string(s);
 	printf("%s\n", s);
 
+	puts2(s);
+
 	return (0);
 }
 
