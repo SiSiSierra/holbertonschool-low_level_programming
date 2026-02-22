@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * puts_half - print the latter half of a string, half of length rounded up
  *
@@ -14,7 +15,9 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	len -= (len + 1) / 2;
+	_putchar(len + 48);
+	len -= len / 2 + 1;
+	_putchar(len + 48);
 	while (*(str + len) != '\0')
 	{
 		_putchar(*(str + len));
