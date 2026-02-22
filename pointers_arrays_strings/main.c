@@ -43,5 +43,7 @@ int main(void)
 	ptr = _strcpy(s1, "Nice one");
 	printf("%s\n", ptr);
 
+	printf("%d\n", _atoi("---++++ -++ Sui - te -   402 #cisfun :)"));
+
 	return (0);
 }
