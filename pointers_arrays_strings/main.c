@@ -14,6 +14,8 @@ int main(void)
 	char *str = "Len";
 	char s[8] = "01234567";
 	int array[5] = {0, 1, 2, 3, 4};
+	char s1[8];
+	char *ptr;
 
 	printf("%d\n", n);
 	reset_to_98(&n);
@@ -37,6 +39,9 @@ int main(void)
 	puts_half(s);
 
 	print_array(array, 5);
+
+	ptr = _strcpy(s1, "Nice one");
+	printf("%s\n", ptr);
 
 	return (0);
 }
