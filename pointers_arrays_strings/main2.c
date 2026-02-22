@@ -13,5 +13,7 @@ int main(void)
 
 	printf("%s\n", _strcat(s1, s2));
 
+	printf("%s\n", _strncat(s1, s2, 2));
+
 	return (0);
 }
