@@ -24,5 +24,7 @@ int main(void)
 
 	reverse_array(a, 9);
 
+	printf("%s\n", string_toupper(s3));
+
 	return (0);
 }
