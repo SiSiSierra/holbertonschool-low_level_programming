@@ -13,6 +13,7 @@ int main(void)
 	int b = 36;
 	char *str = "Len";
 	char s[8] = "01234567";
+	int array[5] = {0, 1, 2, 3, 4};
 
 	printf("%d\n", n);
 	reset_to_98(&n);
@@ -34,6 +35,8 @@ int main(void)
 	puts2(s);
 
 	puts_half(s);
+
+	print_array(array, 5);
 
 	return (0);
 }
