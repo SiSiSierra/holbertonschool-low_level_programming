@@ -15,5 +15,7 @@ int main(void)
 
 	printf("%s\n", _strncat(s1, s2, 2));
 
+	printf("%s\n", _strncpy(s1, s2, 5));
+
 	return (0);
 }
