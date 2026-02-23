@@ -30,5 +30,8 @@ int main(void)
 	n = _strspn(str, accept);
 	printf("%d\n", n);
 
+	f = _strpbrk(str, "World");
+	printf("%s\n", f);
+
 	return (0);
 }
