@@ -13,6 +13,8 @@ int main(void)
 	char buffer3[50] = {0x05};
 	char *str = "Hello World";
 	char *f;
+	unsigned int n;
+	char *accept = "oleH";
 
 	_memset(buffer, 2, 10);
 	printf("%d", buffer[9]);
@@ -24,6 +26,9 @@ int main(void)
 
 	f = _strchr(str, 'W');
 	printf("%c\n", *f);
+
+	n = _strspn(str, accept);
+	printf("%d\n", n);
 
 	return (0);
 }
