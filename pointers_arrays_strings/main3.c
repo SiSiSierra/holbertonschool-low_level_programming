@@ -33,5 +33,9 @@ int main(void)
 	f = _strpbrk(str, "World");
 	printf("%s\n", f);
 
+	f = _strstr("Hello World", "el");
+	printf("%p\n", f);
+	printf("%s\n", f);
+
 	return (0);
 }
