@@ -24,6 +24,10 @@ int main(void)
 		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
 		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},};
+	int c3[3][3] = {
+		{0, 1, 5},
+		{10, 11, 12},
+		{1000, 101, 102},};
 
 	_memset(buffer, 2, 10);
 	printf("%d", buffer[9]);
@@ -47,6 +51,8 @@ int main(void)
 	printf("%s\n", f);
 
 	print_chessboard(board);
+
+	print_diagsums((int *)c3, 3);
 
 	return (0);
 }
