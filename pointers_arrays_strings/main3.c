@@ -15,6 +15,15 @@ int main(void)
 	char *f;
 	unsigned int n;
 	char *accept = "oleH";
+	char board[8][8] = {
+		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},};
 
 	_memset(buffer, 2, 10);
 	printf("%d", buffer[9]);
@@ -36,6 +45,8 @@ int main(void)
 	f = _strstr("Hello World", "el");
 	printf("%p\n", f);
 	printf("%s\n", f);
+
+	print_chessboard(board);
 
 	return (0);
 }
