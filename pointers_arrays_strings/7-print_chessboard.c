@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * print_chessboard - Print a square of 8 characters
+ *
+ * @a: The grid to print
+ * Return: void
+ */
+void print_chessboard(char (*a)[8])
+{
+	int i;
+	int j;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; i++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar(10);
+	}
+	_putchar(10);
+}
