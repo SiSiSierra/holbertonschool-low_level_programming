@@ -14,6 +14,7 @@ int main(void)
 	_print_rev_recursion(s);
 	printf("\n%d\n", _strlen_recursion(s));
 	printf("%d\n", factorial(3));
+	printf("%d\n", _pow_recursion(5, 3));
 
 	return (0);
 }
