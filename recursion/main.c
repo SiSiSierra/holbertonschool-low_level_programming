@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - entry
@@ -8,10 +9,10 @@
 int main(void)
 {
 	char *s = "Hello World!";
-	char *t = "Hello World!";
-
+	
 	_puts_recursion(s);
-	_print_rev_recursion(t);
+	_print_rev_recursion(s);
+	printf("\n%d\n", _strlen_recursion(s));
 
 	return (0);
 }
