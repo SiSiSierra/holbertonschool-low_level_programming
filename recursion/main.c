@@ -15,6 +15,7 @@ int main(void)
 	printf("\n%d\n", _strlen_recursion(s));
 	printf("%d\n", factorial(3));
 	printf("%d\n", _pow_recursion(5, 3));
+	printf("%d\n", _sqrt_recursion(26));
 
 	return (0);
 }
