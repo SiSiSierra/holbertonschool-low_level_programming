@@ -16,6 +16,7 @@ int main(void)
 	printf("%d\n", factorial(3));
 	printf("%d\n", _pow_recursion(5, 3));
 	printf("%d\n", _sqrt_recursion(26));
+	printf("%d\n", is_prime_number(12));
 
 	return (0);
 }
