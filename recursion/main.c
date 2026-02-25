@@ -13,6 +13,7 @@ int main(void)
 	_puts_recursion(s);
 	_print_rev_recursion(s);
 	printf("\n%d\n", _strlen_recursion(s));
+	printf("%d\n", factorial(3));
 
 	return (0);
 }
