@@ -36,10 +36,10 @@ int main(void)
 	}
 	printf("%s\n", array3);
 
-	array4 = alloc_grid(5, 5);
+	array4 = alloc_grid(4, 2);
 	if (array4 == NULL)
 		printf("Array creation failed\n");
-	printf("%d%d%d\n", array4[0][0], array4[4][4], array4[2][3]);
+	printf("%d%d%d\n", array4[0][0], array4[3][1], array4[2][0]);
 
 	return (0);
 }
