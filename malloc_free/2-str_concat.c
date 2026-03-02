@@ -17,12 +17,12 @@ char *str_concat(char *s1, char *s2)
 	char *array;
 
 	if (s1 == NULL)
-		i = 0;
+		s1 = "" ;
 	else
 		for (i = 0; s1[i] != '\0'; i++)
 		{}
 	if (s2 == NULL)
-		j = 0;
+		s2 = "";
 	else
 		for (j = 0; s2[j] != '\0'; j++)
 		{}
