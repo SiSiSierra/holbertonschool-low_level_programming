@@ -33,21 +33,21 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	main = malloc(width * 8);
+	main = malloc(height * 8);
 	if (main == NULL)
 		return (NULL);
 
-	for (i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
 		int j;
-		int *sub = malloc(height * 4);
+		int *sub = malloc(width * 4);
 
 		if (sub == NULL)
 		{
 			free_grid(main, i);
 			return (NULL);
 		}
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 			sub[j] = 0;
 		main[i] = sub;
 	}

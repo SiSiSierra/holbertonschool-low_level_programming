@@ -43,11 +43,11 @@ int main(void)
 		printf("Array creation failed\n");
 	array4[20][20] = 5;
 	array4[31][31] = 5;
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 32 ; i++)
 	{
-		for (j = 0; j < 32; j++)
+		for (j = 0; j < 48; j++)
 			printf("%d,", array4[i][j]);
-		printf("\n");
+		printf("[<-- %d\n", i);
 	}
 
 	return (0);
