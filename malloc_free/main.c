@@ -18,14 +18,14 @@ int main(void)
 		printf("Array creation failed\n");
 	}
 
-	printf("%c%c%c\n", array[0], array[4], array[9]);
+	printf("%s\n", array);
 
 	array2 = _strdup(array);
 	if (array2 == NULL)
 	{
 		printf("Array creation failed\n");
 	}
-	printf("%c%c%c\n", array[0], array[4], array[9]);
+	printf("%s\n", array2);
 
 	return (0);
 }
