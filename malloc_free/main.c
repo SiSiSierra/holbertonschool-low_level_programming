@@ -9,6 +9,8 @@
  */
 int main(void)
 {
+	int i;
+	int j;
 	char *array;
 	char *array2;
 	char *array3;
@@ -36,10 +38,17 @@ int main(void)
 	}
 	printf("%s\n", array3);
 
-	array4 = alloc_grid(4, 2);
+	array4 = alloc_grid(48, 32);
 	if (array4 == NULL)
 		printf("Array creation failed\n");
-	printf("%d%d%d\n", array4[0][0], array4[3][1], array4[2][0]);
+	array4[20][20] = 5;
+	array4[31][31] = 5;
+	for (i = 0; i < 48; i++)
+	{
+		for (j = 0; j < 32; j++)
+			printf("%d,", array4[i][j]);
+		printf("\n");
+	}
 
 	return (0);
 }
