@@ -11,11 +11,13 @@
 int main(void)
 {
 	char *c;
-	double *d;
 
 	c = malloc_checked(sizeof(char) * 1024);
-	d = malloc_checked(INT_MAX);
-	printf("%p\n%p\n", (void *)c, (void *)d);
+	printf("%p\n", (void *)c);
+	free(c);
+
+	c = string_nconcat("", "School!!!!!", 77);
+	printf("%s\n", c);
 
 	return (0);
 }
