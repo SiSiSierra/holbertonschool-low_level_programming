@@ -26,7 +26,8 @@ int main(void)
 	printf("%d%d%d\n", c[0], c[22], c[49]);
 	free(c);
 
-	i = array_range(5, 10);
+	printf("%d\n", 98 - 0);
+	i = array_range(-2048, 500);
 	printf("%d%d%d\n", i[0], i[2], i[5]);
 	free(i);
 
