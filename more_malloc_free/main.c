@@ -11,6 +11,7 @@
 int main(void)
 {
 	char *c;
+	int *i;
 
 	c = malloc_checked(sizeof(char) * 1024);
 	printf("%p\n", (void *)c);
@@ -23,6 +24,11 @@ int main(void)
 	c = (char *)_calloc(10, 5);
 	c[22] = 10;
 	printf("%d%d%d\n", c[0], c[22], c[49]);
+	free(c);
+
+	i = array_range(5, 10);
+	printf("%d%d%d\n", i[0], i[2], i[5]);
+	free(i);
 
 	return (0);
 }
