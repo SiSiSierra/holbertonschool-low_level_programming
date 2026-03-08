@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	struct dog Gus;
+	dog_t *Gus;
 
-	init_dog(&Gus, NULL, 10, "Felicity");
-	print_dog(&Gus);
+	Gus = new_dog("Gus", 10, "Felicity");
+	print_dog((struct dog *)Gus);
 
 	return (0);
 }
