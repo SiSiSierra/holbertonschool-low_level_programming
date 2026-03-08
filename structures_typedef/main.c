@@ -13,6 +13,7 @@ int main(void)
 
 	Gus = new_dog("Gus", 10, "Felicity");
 	print_dog((struct dog *)Gus);
+	free_dog(Gus);
 
 	return (0);
 }
