@@ -15,13 +15,14 @@ void print_all(const char * const format, ...)
 		{'f', print_arg_flo},
 		{'s', print_arg_str}
 	};
+	
 	int i;
 	int j = 0;
 	char *sep = "";
 	va_list args;
 
 	va_start(args, format);
-	while (format[i] != '\0')
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (prints[j].type != format[i] && j < 4)
@@ -79,11 +80,9 @@ void print_arg_flo(va_list list)
  */
 void print_arg_str(va_list list)
 {
-	char *tmp;
-	char *out = "(nil)";
+	char *tmp = va_arg(list, char *);
 
-	tmp = va_arg(list, char *);
-	if (tmp != NULL)
-		out = tmp;
-	printf("%s", out);
+	if (tmp == NULL)
+		tmp = "(nil)";
+	printf("%s", tmp);
 }
