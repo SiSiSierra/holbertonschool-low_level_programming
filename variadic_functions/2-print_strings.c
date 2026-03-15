@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * print_numbers - Print each string param
+ * print_strings - Print each string param
  *
  * @separator: String between int output
  * @n: Number of passed ints
