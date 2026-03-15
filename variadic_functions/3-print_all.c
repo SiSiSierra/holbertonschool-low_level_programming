@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 		{'f', print_arg_flo},
 		{'s', print_arg_str}
 	};
-	
+
 	int i;
 	int j = 0;
 	char *sep = "";
