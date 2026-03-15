@@ -80,7 +80,7 @@ void print_arg_flo(va_list list)
 void print_arg_str(va_list list)
 {
 	char *tmp;
-	char *out = "nil";
+	char *out = "(nil)";
 
 	tmp = va_arg(list, char *);
 	if (tmp != NULL)

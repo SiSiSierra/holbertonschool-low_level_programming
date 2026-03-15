@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	const char * const test = "ceis";
+	const char * const format = "mnbvfqcepolsbxzi";
 
-	printf("%s\n%p\n", test, test);
-	print_all(test, 'B', 3, "stSchool");
+	printf("%p\n", format);
+	print_all("mnbvfqcepolsbxzi", 3.14435, 'H', "#Cisfun", 0);
 	return (0);
 }
