@@ -19,7 +19,7 @@ void print_arg_str(va_list);
  */
 typedef struct print_type
 {
-	char *type;
+	char type;
 	void (*f)(va_list args);
 } p_t;
 

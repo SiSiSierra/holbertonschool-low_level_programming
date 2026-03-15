@@ -10,12 +10,12 @@
 void print_all(const char * const format, ...)
 {
 	p_t prints[4] = {
-		{"c", print_arg_chr},
-		{"i", print_arg_int},
-		{"f", print_arg_flo},
-		{"s", print_arg_str},
+		{'c', print_arg_chr},
+		{'i', print_arg_int},
+		{'f', print_arg_flo},
+		{'s', print_arg_str}
 	};
-	int i = 0;
+	int i;
 	int j = 0;
 	char *sep = "";
 	va_list args;
@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		j = 0;
-		while (prints[j].type[0] != format[i] && j < 4)
+		while (prints[j].type != format[i] && j < 4)
 			j++;
 		i++;
 		if (j == 4)
