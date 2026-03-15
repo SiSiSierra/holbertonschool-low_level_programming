@@ -1,7 +1,5 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
-#include <stdlib.h>
 
 /**
  * print_all - Print params of given data types
@@ -11,27 +9,29 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, j;
-	va_list args;
-	print_t funcs[] = {
+	p_t prints[4] = {
 		{"c", print_arg_chr},
 		{"i", print_arg_int},
 		{"f", print_arg_flo},
 		{"s", print_arg_str},
 	};
+	int i = 0;
+	int j = 0;
+	char *sep = "";
+	va_list args;
 
-	printf("%s", format);
 	va_start(args, format);
 	while (format[i] != '\0')
 	{
 		j = 0;
-		printf("i = %d", i);
-		while (funcs[j].type[0] != format[i] && j < 4)
+		while (prints[j].type[0] != format[i] && j < 4)
 			j++;
+		i++;
 		if (j == 4)
 			continue;
-		funcs[j].f(args);
-		i++;
+		printf("%s", sep);
+		sep = ", ";
+		prints[j].f(args);
 	}
 	va_end(args);
 	printf("\n");
