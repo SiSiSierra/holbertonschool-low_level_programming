@@ -6,6 +6,7 @@
  *
  * @head: Head of linked list
  * @index: Index to delete
+ * Return: 1 for success, -1 for fail
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
