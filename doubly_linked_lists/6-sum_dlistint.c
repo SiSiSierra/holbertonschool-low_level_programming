@@ -21,5 +21,5 @@ int sum_dlistint(dlistint_t *head)
 		node = node->next;
 		n += node->n;
 	}
-	return(n);
+	return (n);
 }
