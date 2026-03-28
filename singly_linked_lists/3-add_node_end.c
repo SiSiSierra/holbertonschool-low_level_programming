@@ -3,6 +3,19 @@
 #include <stdlib.h>
 
 /**
+ * free_list - Frees memory of linked list
+ *
+ * @head: head of linked list
+ * Return: void
+ */
+void free_list(list_t *head)
+{
+	if (head->next != NULL)
+		free_list(head);
+	free(head->str);
+	free(head);
+}
+/**
  * add_node_end - Add a node at the end of a linked list
  *
  * @head: Pointer to head of list
@@ -16,8 +29,14 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
+	{
 		return (NULL);
+	}
 	new->str = strdup(str);
+	if (new->str == NULL)
+	{
+		return (NULL);
+	}
 	new->len = 0;
 	while (new->str[new->len] != '\0')
 		new->len++;
@@ -32,19 +51,4 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	return (new);
 
-}
-
-/**
- * find_end - Get pointer to last node in linked list
- *
- * @head: Pointer to head of list
- * Return: Pointer to end of list
- */
-list_t *find_end(list_t *head)
-{
-	if (head == NULL)
-		return (NULL);
-	if (head->next == NULL)
-		return (head);
-	return (find_end(head));
 }
