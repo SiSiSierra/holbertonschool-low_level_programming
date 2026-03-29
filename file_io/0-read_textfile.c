@@ -23,6 +23,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	if (buff == NULL)
 		return (0);
 	out = read(fd, buff, letters);
+	close(fd);
 	if (out == -1)
 	{
 		free(buff);
