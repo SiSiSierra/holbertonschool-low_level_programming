@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	fdto = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 664);
+	fdto = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	do {
 		out = read(fdfrom, buffer, 1024);
 		if (out < 0 || fdfrom == -1)
