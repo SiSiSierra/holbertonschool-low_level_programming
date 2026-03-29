@@ -29,7 +29,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		free(buff);
 		return (0);
 	}
-	printed = write(1, buff, out);
+	printed = write(STDOUT_FILENO, buff, out);
 	free(buff);
 	if (out == -1 || out != printed)
 		return (0);
