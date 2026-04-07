@@ -34,7 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		cache = ht->array[index];
-		while (cache->key != hn->key)
+		while (strcmp(cache->key, hn->key) != 0)
 		{
 			if (cache->next == NULL)
 			{
