@@ -45,6 +45,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			cache = cache->next;
 		}
+		free(cache->value);
+		free(hn->key);
 		cache->value = hn->value;
 		free(hn);
 	}
