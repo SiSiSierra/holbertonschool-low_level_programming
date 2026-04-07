@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 #include <string.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * hash_table_set - Add an element to a hash table
@@ -28,9 +29,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hn->key = key2;
 	value2 = strdup(value);
 	hn->value = value2;
-	index = key_index(key, ht->size);
-	*(ht->array)[index] = hn;
-	printf("%p\n%p\n", (void *)hn, (void *)*(ht->array)[index]);
-
+	index = key_index((unsigned char *) key, ht->size);
+	if (ht->array[index] == NULL)
+		ht->array[index] = hn;
+	else if (strcmp(hn->key, ht->array[index]->key) != 0)
+	{
+		index = 0;
+		ht->array[0] = hn;
+	}
+	else
+	{
+		ht->array[index]->value = hn->value;
+		free(hn->key);
+		free(hn);
+	}
 	return (1);
 }
